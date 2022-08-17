@@ -14,6 +14,8 @@
 
 .right-h{
   flex: 1;
+  position: relative;
+  background-color: var(--orange);
 }
 
 .the-best-ad{
@@ -58,7 +60,70 @@
 .hero-text>div:nth-of-type(3){
   font-size: 1rem;
   font-weight: 200;
-  text-transform: none;
+  text-transform: lowercase;
   letter-spacing: 1px;
   width: 80%;
+}
+
+.hero-space{
+  margin-top: 24px;
+}
+
+.figures{
+  display: flex;
+  gap: 2rem;
+}
+
+.figures>div{
+  display: flex;
+  flex-direction: column;
+}
+
+.figures>div>span:nth-of-type(1){
+  color: white;
+  font-size: 2rem;
+}
+
+.figures>div>span:nth-of-type(2){
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.hero-buttons{
+  display: flex;
+  gap: 1rem;
+  font-weight: normal;
+}
+
+.hero-buttons>:nth-child(1){
+  color: white;
+  background-color: var(--orange);
+  width: 8rem;
+}
+
+.hero-buttons>:nth-child(2){
+  color: white;
+  background-color: transparent;
+  width: 8rem;
+  border: 2px solid var(--orange);
+}
+
+.btn{
+  background-color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: 4px solid transparent;
+  transition: 300ms all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.right-h>.btn{
+  position: absolute;
+  right: 3rem; top: 2rem; color: black;
 }
